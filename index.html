@@ -11,14 +11,17 @@
     />
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- end css -->
     <title>portfolio | RM</title>
   </head>
   <body id="home">
     <!-- Nav Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Raka Maelandy</a>
+        <a class="navbar-brand fw-bold" href="#">RM</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,7 +34,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto fw-semibold">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
@@ -39,7 +42,10 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#achievment">Achievment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-project">Project</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -51,9 +57,9 @@
     <!-- Nav End -->
     <!-- Jumbotron Start -->
     <section class="jumbotron text-center">
-      <img src="img/foto_2.jpeg" alt="" width="230" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Raka Maelandy</h1>
-      <p class="lead">Student | Editor | Front End Developer</p>
+      <img src="img/foto_2.jpeg" alt="" width="230" class="rounded-circle img-thumbnail my-pp" />
+      <h1 class="display-4"></h1>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -66,20 +72,25 @@
     <!-- About Start -->
     <section id="about">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div
+          class="row text-center mb-3"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+        >
           <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1300">
+            <p class="paragraf1">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore libero deserunt
               corporis eaque sapiente asperiores est, provident pariatur animi quia.
             </p>
           </div>
-          <div class="col-md-4">
-            <p>
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1500">
+            <p class="paragraf1">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam vitae ad voluptas
               nisi soluta perferendis, molestiae culpa quo saepe, hic, asperiores non consectetur
               inventore? Totam.
@@ -97,16 +108,26 @@
     </section>
     <!-- About End -->
     <!-- Projects Start -->
-    <section id="projects">
+    <section id="achievment">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div
+          class="row text-center mb-3"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+        >
           <div class="col">
             <h2>My Achievment</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="zoom-in-right"
+              data-aos-delay="500"
+              data-aos-duration="1300"
+            >
               <img
                 src="img/fls2n 2023.jpeg"
                 class="card-img-top"
@@ -120,7 +141,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-left" data-aos-delay="500" data-aos-duration="1300">
               <img
                 src="img/kreativitas video.jpeg"
                 class="card-img-top"
@@ -135,6 +156,41 @@
           </div>
         </div>
       </div>
+      <section id="my-project">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1200">
+              <h2>My Project</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div
+                class="project-box1"
+                data-aos="zoom-in-right"
+                data-aos-delay="500"
+                data-aos-duration="1300"
+              >
+                <h4 class="fls2n-2023-kota">The Next Generation</h4>
+                <img src="img/fls2n-tangsel.webp" alt="FLS2N 2023 Tangsel" class="tng" />
+                <a href="#" class="btn btn-light project-detail">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3"> 
+              <div
+                class="project-box2"
+                data-aos="zoom-in-left"
+                data-aos-delay="500"
+                data-aos-duration="1300"
+              >
+                <h4 class="fls2n-2023-kota">Anxiety</h4>
+                <img src="img/fls2n-banten.webp" alt="FLS2N 2023 Tangsel" class="tng" />
+                <a href="#" class="btn btn-light project-detail">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -147,18 +203,28 @@
     <!-- Contact Start -->
     <section id="contact">
       <div class="container">
-        <div class="row text-center">
+        <div
+          class="row text-center"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+        >
           <div class="col">
             <h2>Contact Me</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div
+          class="row justify-content-center"
+          data-aos="fade"
+          data-aos-delay="500"
+          data-aos-duration="1500"
+        >
           <div class="col-md-8">
             <div
               class="alert alert-success alert-dismissible fade show d-none my-alert"
               role="alert"
             >
-              <strong>Thank you for your message</strong> I will read the message. <br>
+              <strong>Thank you for your message</strong> I will read the message. <br />
               artinya apaan tu bang messi...
               <button
                 type="button"
@@ -242,17 +308,53 @@
         btnKirim.classList.toggle("d-none");
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-        .then((response) => {
+          .then((response) => {
             //tampilkan tombol kirim, hilangkan tombol loading
             btnLoading.classList.toggle("d-none");
             btnKirim.classList.toggle("d-none");
             //tampilkan alert
-            myAlert.classList.toggle('d-none');
+            myAlert.classList.toggle("d-none");
             //reset formnya
             form.reset();
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 3.5, text: "Student | Editor | Front End Developer", delay: 1 });
+      gsap.to(".display-4", { duration: 2, text: "Raka Maelandy", delay: 0.7 });
+      gsap.from(".jumbotron img", {
+        duration: 1.4,
+        opacity: 0,
+        delay: 0.5,
+        rotateZ: 360,
+      });
+      gsap.from(".navbar", {
+        duration: 1,
+        y: -200,
+        opacity: 0,
+        ease: "bounce",
+      });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".project-box1"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+      });
+      VanillaTilt.init(document.querySelector(".project-box2"), {
+        max: 25,
+        speed: 400,
+        glare: true,
       });
     </script>
   </body>

@@ -3,10 +3,156 @@
     background-color: #e2edff;
 }
 
-#projects {
+#achievment {
+    background-color: #e2edff;
+}
+#my-project {
     background-color: #e2edff;
 }
 
 section {
-    padding-top: 5rem;    
+    padding-top: 7rem;    
+}
+
+/* my project section */
+.project-box1 {
+    position: relative;
+    background-color: #0d6efd;
+    border-radius: 10px;
+    height: 500px;
+    transform-style: preserve-3d
+}
+.project-box2 {
+    position: relative;
+    background-color: #0d6efd;
+    border-radius: 10px;
+    height: 500px;
+    transform-style: preserve-3d
+}
+
+.project-box1::before {
+    content: 'FLS2N 2023';
+    position: absolute;
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: bold;
+    font-style: italic;
+    top: 2.1em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.project-box1:hover::before {
+    opacity: 0.3;
+}
+.project-box2::before {
+    content: 'FLS2N 2023';
+    position: absolute;
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: bold;
+    font-style: italic;
+    top: 2.1em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.project-box2:hover::before {
+    opacity: 0.3;
+}
+
+.project-box1::after {
+    content: 'TINGKAT KOTA';
+    position: absolute;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-style: italic;
+    bottom: 3em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.project-box1:hover::after {
+    opacity: 0.3;
+}
+
+.project-box2::after {
+    content: 'TINGKAT PROVINSI';
+    position: absolute;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-style: italic;
+    bottom: 4.3em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.project-box2:hover::after {
+    opacity: 0.3;
+}
+
+.fls2n-2023-kota {
+    font-size: 2rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    top: 0;
+    opacity: 0;
+    transition: 0.6s;
+    transform: translate3d(0,0,30px);
+}
+
+.project-box1:hover .fls2n-2023-kota {
+    top: 25px;
+opacity: 1;
+}
+.project-box2:hover .fls2n-2023-kota {
+    top: 25px;
+opacity: 1;
+}
+
+.project-detail {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 30px);
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.project-box1:hover .project-detail {
+    bottom: 15px;
+    opacity: 1;
+}
+.project-box2:hover .project-detail {
+    bottom: 15px;
+    opacity: 1;
+}
+
+.tng {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 50px);
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.project-box1:hover .tng {
+transform: translate3d(-50%, -50%, 50px) scale(1.1);
+}
+.project-box2:hover .tng {
+transform: translate3d(-50%, -50%, 50px) scale(1.1);
 }
